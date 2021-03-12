@@ -2,7 +2,7 @@ var cardsGrid
 
 window.onload = () => {
     cardsGrid = document.getElementById('cards-grid')
-    json = $.getJSON('123.json', (json) => {
+    json = $.getJSON('homepage.json', (json) => {
         for(let i = 0; i < json.project.length; i++) {
             cardsGrid.innerHTML += 
             `<div class="card" onclick="link('${json.project[i].link}')">

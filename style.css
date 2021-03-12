@@ -40,6 +40,7 @@ body {
 }
 
 .image-container {
+    border-radius: 20px;
     overflow: hidden;
     justify-content: center;
     display: flex;
