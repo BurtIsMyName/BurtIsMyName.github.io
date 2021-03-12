@@ -1,0 +1,143 @@
+body {
+    margin: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "San Francisco";
+}
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+.calculator {
+    width: 400px;
+    height: 800px;
+
+    background-color: black;
+    border-radius: 50px;
+}
+
+.calculator-grid {
+    margin: 10px;
+    height: calc(100% - 20px);
+
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto 95px 95px 95px 95px 95px;
+    grid-template-areas: 
+    'result result result result'
+    'ac     neg    perc   div   '
+    'n7     n8     n9     tim   '
+    'n4     n5     n6     min   '
+    'n1     n2     n3     plus  '
+    'n0     n0     point  eql   ';
+
+    color: white;
+    text-align: center;
+}
+
+.key {
+    font-size: 38px;
+    margin: 8px;
+    border-radius: 100vh;
+    user-select: none;
+    position: relative;
+}
+.key:hover {
+    cursor: pointer;
+}
+.key-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#result-content {
+    position: relative;
+    grid-area: result;
+    text-align: end;
+    font-size: 80px;
+}
+.special {
+    background-color: rgb(168, 168, 168);
+}
+.special:hover {
+    background-color: rgb(209, 209, 209);
+}
+.number {
+    background-color: rgb(57, 57, 57);
+}
+.number:hover {
+    background-color: rgb(99, 99, 99);
+}
+.operation {
+    background-color: rgb(254, 152, 13);
+    font-size: 50px;
+}
+.operation:hover {
+    background-color: rgb(250, 176, 71);
+}
+
+#result {
+    position: absolute;
+    bottom: 0;
+    right: 8px;
+}
+#ac {
+    grid-area: ac;
+}
+#neg {
+    grid-area: neg;
+}
+#neg img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#perc {
+    grid-area: perc;
+    font-weight: 600;
+}
+#div {
+    grid-area: div;
+}
+#n0 {
+    grid-area: n0;
+}
+#n0 div {
+    right: auto !important;
+    left: 28px;
+}
+#n1 {
+    grid-area: n1;
+}
+#n2 {
+    grid-area: n2;
+}
+#n3 {
+    grid-area: n3;
+}
+#n4 {
+    grid-area: n4;
+}
+#n5 {
+    grid-area: n5;
+}
+#n6 {
+    grid-area: n6;
+}
+#n7 {
+    grid-area: n7;
+}
+#n8 {
+    grid-area: n8;
+}
+#n9 {
+    grid-area: n9;
+}
