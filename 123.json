@@ -4,6 +4,21 @@
             "name": "calculator",
             "img": "./images/calculator.png",
             "link": "./calculator/index.html"
+        },
+        {
+            "name": "calculator",
+            "img": "./images/calculator.png",
+            "link": "./calculator/index.html"
+        },
+        {
+            "name": "calculator",
+            "img": "./images/calculator.png",
+            "link": "./calculator/index.html"
+        },
+        {
+            "name": "calculator",
+            "img": "./images/calculator.png",
+            "link": "./calculator/index.html"
         }
     ]
 }

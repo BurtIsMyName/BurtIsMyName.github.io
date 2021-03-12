@@ -7,7 +7,7 @@ body {
 
 #cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 400px));
     gap: 2vw;
     row-gap: 2vh;
 }
