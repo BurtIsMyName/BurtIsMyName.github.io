@@ -1,24 +1,47 @@
+@import url('http://fonts.cdnfonts.com/css/axiforma');
+
 body {
-    background-color: rgb(63, 63, 63);
+    background-color: #fafbfc;
+    font-family: 'Axiforma', sans-serif;
 }
 
 .card {
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(0, 0, 0, 0);
     width: 400px;
     height: 400px;
     border-radius: 25px;
     display: grid;
-    grid-template-rows: 50%;
+    grid-template-rows: 80%;
+    grid-template-columns: 100%;
     text-align: center;
+    vertical-align: middle;
+    box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.15);
+    position: relative;
+    grid-template-areas: '.' 'text';
+}
+.card:hover .image-container img {
+        height: 120%;
 }
 
 .image-container {
+    overflow: hidden;
     justify-content: center;
     display: flex;
+    align-items: center;
     position: relative;
+    margin: 20px;
 }
 
 .image-container img {
+    transition: 0.2s ease-out;
+    height: 100%;
+}
+
+
+.card a {
+    grid-area: text;
     position: absolute;
-    top: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
