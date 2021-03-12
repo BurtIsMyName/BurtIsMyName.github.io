@@ -38,7 +38,8 @@ body {
 }
 
 
-.card a {
+.card strong {
+    font-size: 20px;
     grid-area: text;
     position: absolute;
     top: 50%;
