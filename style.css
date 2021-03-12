@@ -5,7 +5,7 @@ body {
     font-family: 'Axiforma', sans-serif;
 }
 
-.cards-grid {
+#cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     gap: 2vw;

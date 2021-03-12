@@ -1,7 +1,9 @@
 {
-    "name": "goodmorning",
-    "media": [
-        "hey",
-        "oh"
+    "project": [
+        {
+            "name": "calculator",
+            "img": "./images/calculator.png",
+            "link": "./calculator/index.html"
+        }
     ]
 }
