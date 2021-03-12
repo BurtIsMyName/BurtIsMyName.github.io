@@ -1,0 +1,4 @@
+fix nan at start
+max char
+fix hover operation
+fix operation after operation
