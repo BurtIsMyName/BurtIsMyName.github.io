@@ -15,7 +15,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .cards-grid {
-        grid-template-columns: 100%;
+        grid-template-columns: 100% !important;
     }
 }
 
