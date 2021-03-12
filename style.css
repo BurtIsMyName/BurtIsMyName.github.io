@@ -1,3 +1,24 @@
 body {
-    font-family: "Lucida Console";
+    background-color: rgb(63, 63, 63);
+}
+
+.card {
+    background-color: rgb(37, 37, 37);
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+    display: grid;
+    grid-template-rows: 50%;
+    text-align: center;
+}
+
+.image-container {
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0px;
 }
