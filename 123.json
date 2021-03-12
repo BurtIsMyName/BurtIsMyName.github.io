@@ -3,12 +3,12 @@
         {
             "name": "calculator",
             "img": "./images/calculator.png",
-            "link": "./calculator/index.html"
+            "link": "./calculator"
         },
         {
-            "name": "calculator",
+            "name": "slider",
             "img": "./images/calculator.png",
-            "link": "./calculator/index.html"
+            "link": "./cool_slider"
         },
         {
             "name": "calculator",
