@@ -9,6 +9,13 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     gap: 2vw;
+    row-gap: 2vh;
+}
+
+@media screen and (max-width: 600px) {
+    .cards-grid {
+        grid-template-columns: 100%;
+    }
 }
 
 .card {
