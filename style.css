@@ -5,6 +5,13 @@ body {
     font-family: 'Axiforma', sans-serif;
 }
 
+#header {
+    z-index: 1;
+    height: 20%;
+    width: 100%;
+    background-color: black;
+}
+
 #cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1.5fr));
