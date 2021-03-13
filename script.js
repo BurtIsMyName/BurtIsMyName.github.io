@@ -14,7 +14,7 @@ window.onload = () => {
         }
     })
 
-    setTimeout(() => {
+    setInterval(() => {
         console.log(document.body.scrollTop);
     }, 10)
 }
