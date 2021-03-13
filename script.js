@@ -18,7 +18,7 @@ window.onload = () => {
     })
 
     document.addEventListener('scroll', () => {
-        banner.style["transition"] = 0
+        banner.style["transition"] = "0s"
 
         if(document.body.scrollTop > 0)
             banner.style["background-color"] = "gray"
@@ -27,7 +27,7 @@ window.onload = () => {
 
         banner.style["top"] = clamp(-document.body.scrollTop, -vh(10), 0)
 
-        banner.style["transition"] = 0.4
+        banner.style["transition"] = "0.4s"
     })
 }
 
