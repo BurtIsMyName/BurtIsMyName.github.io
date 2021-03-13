@@ -18,10 +18,22 @@ window.onload = () => {
     })
 
     document.addEventListener('scroll', () => {
-        banner.style["top"] = -document.body.scrollTop * 0.4
+        if(document.body.scrollTop > 0) {
+            banner.style["background-color"] = "gray"
+            banner.style["top"] = clamp(-document.body.scrollTop, vh(10), 0)
+        }
     })
 }
 
 function link(link) {
     window.location.href = link
+}
+
+function clamp(num, min, max) {
+    return num <= min ? min : num >= max ? max : num;
+}
+
+function vh(v) {
+    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    return (v * h) / 100;
 }
