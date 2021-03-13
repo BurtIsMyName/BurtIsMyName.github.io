@@ -1,7 +1,9 @@
 var cardsGrid
+var banner
 
 window.onload = () => {
     cardsGrid = document.getElementById('cards-grid')
+    barnner = document.getElementById('header')
     json = $.getJSON('homepage.json', (json) => {
         for(let i = 0; i < json.project.length; i++) {
             cardsGrid.innerHTML += 
@@ -14,9 +16,9 @@ window.onload = () => {
         }
     })
 
-    setInterval(() => {
-        console.log(document.body.scrollHeight);
-    }, 10)
+    document.addEventListener('scroll', () => {
+        banner.top = -document.body.scrollTop
+    })
 }
 
 function link(link) {
