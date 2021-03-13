@@ -9,9 +9,13 @@ body {
 #header {
     position: fixed;
     z-index: 1;
-    height: 20%;
-    width: 100%;
+    height: 20vh;
+    width: 100vw;
     background-color: black;
+}
+
+#content {
+    padding-top: 20vh;
 }
 
 #cards-grid {
