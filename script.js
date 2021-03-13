@@ -1,3 +1,6 @@
+const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+
 var cardsGrid
 var banner
 
@@ -23,7 +26,7 @@ window.onload = () => {
         else 
             banner.style["background-color"] = "transparent"
 
-        banner.style["top"] = clamp(-document.body.scrollTop, -vh(10), 0)
+        banner.style["top"] = clamp(-document.body.scrollTop, -20 * vh, 0)
     })
 }
 
@@ -33,9 +36,4 @@ function link(link) {
 
 function clamp(num, min, max) {
     return num <= min ? min : num >= max ? max : num;
-}
-
-function vh(v) {
-    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    return (v * h) / 100;
 }
