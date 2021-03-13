@@ -18,12 +18,16 @@ window.onload = () => {
     })
 
     document.addEventListener('scroll', () => {
+        banner.style["transition"] = 0
+
         if(document.body.scrollTop > 0)
             banner.style["background-color"] = "gray"
         else 
             banner.style["background-color"] = "transparent"
 
         banner.style["top"] = clamp(-document.body.scrollTop, -vh(10), 0)
+
+        banner.style["transition"] = 0.4
     })
 }
 

@@ -12,6 +12,7 @@ body {
     height: 20vh;
     width: 100vw;
     background-color: transparent;
+    transition: 0.4s;
 }
 
 #content {
