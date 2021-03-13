@@ -3,7 +3,8 @@ var banner
 
 window.onload = () => {
     cardsGrid = document.getElementById('cards-grid')
-    barnner = document.getElementById('header')
+    banner = document.getElementById('header')
+
     json = $.getJSON('homepage.json', (json) => {
         for(let i = 0; i < json.project.length; i++) {
             cardsGrid.innerHTML += 
