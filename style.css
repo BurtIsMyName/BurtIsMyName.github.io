@@ -11,7 +11,7 @@ body {
     z-index: 1;
     height: 20vh;
     width: 100vw;
-    background-color: transparent;
+    background-color: #fafbfc;
     transition: background-color 1s;
 }
 

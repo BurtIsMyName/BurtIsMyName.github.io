@@ -22,9 +22,9 @@ window.onload = () => {
 
     document.addEventListener('scroll', () => {
         if(document.body.scrollTop > 0)
-            banner.style["background-color"] = "0px"
+            banner.style["border-bottom"] = "0px"
         else 
-            banner.style["border-bottom"] = "1px solid gray"
+            banner.style["border-bottom"] = "1px solid #e4e4e4"
 
         banner.style["top"] = clamp(-document.body.scrollTop, -10 * vh, 0)
     })
