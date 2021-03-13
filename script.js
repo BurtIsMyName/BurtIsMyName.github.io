@@ -26,7 +26,7 @@ window.onload = () => {
         else 
             banner.style["background-color"] = "transparent"
 
-        banner.style["top"] = clamp(-document.body.scrollTop, -20 * vh, 0)
+        banner.style["top"] = clamp(-document.body.scrollTop, -10 * vh, 0)
     })
 }
 
