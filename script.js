@@ -18,7 +18,7 @@ window.onload = () => {
     })
 
     document.addEventListener('scroll', () => {
-        banner.style["top"] = -document.body.scrollTop * 0.1
+        banner.style["top"] = -document.body.scrollTop * 0.4
     })
 }
 
