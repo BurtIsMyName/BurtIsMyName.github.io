@@ -13,7 +13,7 @@ body {
     height: 20vh;
     width: 100vw;
     background-color: #fafbfc;
-    transition: background-color 1s;
+    transition: box-shadow 1s;
 }
 
 #content {
