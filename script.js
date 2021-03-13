@@ -13,6 +13,10 @@ window.onload = () => {
             </div>`
         }
     })
+
+    setTimeout(() => {
+        console.log(document.body.scrollTop);
+    }, 10)
 }
 
 function link(link) {
