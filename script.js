@@ -15,7 +15,7 @@ window.onload = () => {
     })
 
     setInterval(() => {
-        console.log(document.body.scrollTop);
+        console.log(document.body.scrollHeight);
     }, 10)
 }
 
