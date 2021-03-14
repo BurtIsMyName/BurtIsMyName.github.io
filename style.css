@@ -83,19 +83,22 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-    height:10px;
+    width: 14px;
+    height:14px;
 }
 ::-webkit-scrollbar-corner {
     background: transparent;
 }
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(190, 190, 190, 0.5);
+    border: 0px;
 }
 ::-webkit-scrollbar-track {
     background: transparent;
 }
 ::-webkit-scrollbar-thumb {
     background: rgb(163, 163, 163, 0.5);
-    border-radius:5px;
+    border-radius: 8px;
+    border: double 3px rgba(255,255,255,0);
+    background-clip: padding-box;
 }
